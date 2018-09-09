@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>당신의 소주 주량은?</title>
+	<style>
+		.mcontain {width:1400px; margin:0 auto;}
+	</style>
+</head>
+<body>
+	<div class="mcontain">
+	<div style="width: 500px; height: 200px;  color: green; text-align: center; line-height: 250px; font-size: 1.8em; font-weight: 800 ">나의 소주 주량을 알아보자!</div>
+	<div style="position:relative; left: 80px">
+		<input type="text" style="text-align: center;" placeholder="당신의 체중을 입력하세요" size="30" id="myWeight">kg
+		<button id="but">Click!</button>
+	</div>
+	<div id="output" style="width: 550px; height: 500px;  ; color: black; text-align: center; line-height: 200px; font-size: 1.4em;font-weight: 600 "> 당신의 소주 주량은?<img src="c1.jpg" style="height:300px; margin-top: -50px; "></div>
+
+	<script type="text/javascript">
+
+		but.onclick = function(){
+
+			var sool = (myWeight. value/ 17.8) * 120;
+	 		var finalOutput = "당신의 소주 주량은 " 
+	 		+ sool +  "ml 입니다. ";
+ 			output. innerHTML = finalOutput; 
+
+		}
+ 		
+ 		
+	 		   
+	</script>
+
+	<div style="width: 500px; height: 200px;  color: gray; text-align: center; line-height: 100px; font-size: 1em; "> 참이슬 후레쉬 기준이며 소주 한 잔에 약 40ml 입니다. </div>
+</div>
+
+</body>
+</html>
